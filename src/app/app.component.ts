@@ -17,11 +17,11 @@ import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
   animations: [
     trigger('routerTransition', [
       transition('* <=> *', [    
-        query(':enter, :leave', style({ position: 'fixed', width:'100%' })),
+        query(':leave', style({ display: 'none'})),
         group([ 
           query(':enter', [
             style({ opacity: '0' }),
-            animate('1.5s ease-in-out', style({ opacity: '1' }))
+            animate('1.0s ease-in-out', style({ opacity: '1' }))
           ]),
           query(':leave', [
             style({ opacity: '1' }),

@@ -1,76 +1,325 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
-  styles: [],
-  template: `
-    <div class="section1 p-30" id="Home">
-      <div class="sec-title">
-        <!-- <div class="pg-sub-title">Home</div> -->
-        <div class="pg-title">About</div>
-      </div>
-      <div class="d-flex-align-center">
-        <div class="user-img"><img src="assets/main.photo.jpg" /></div>
-        <div class="user-profile flex-1">
-          <div class="pro-details">
-            <div class="sm-text">Hello! My name is</div>
-            <div class="name">Juan José Armanino</div>
-            <div class="role">Full-Stack Developer Jr.</div>
-          </div>
-          <div class="text">
-            A passionate and enthusiastic entrepreneur navigating the winding
-            road to becoming a full-fledged software engineer (if that's really
-            achievable these days!). I dedicated more than ten years to 9-to-5
-            office jobs. Then I decided to take a turn and dedicate myself to
-            what I've always been passionate about: developing valuable
-            solutions for real people.
-          </div>
-          <div class="pr-list">
-            <ul>
-              <li>
-                <i class="fa fa-map-marker" aria-hidden="true"></i> Salta,
-                Argentina
-              </li>
-              <li>
-                <i class="fa fa-phone" aria-hidden="true"></i> +54 9 3875763433
-              </li>
-              <li>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                juanjo@armanino.dev
-              </li>
-              <li>
-                <i class="fa fa-calendar" aria-hidden="true"></i> 11th March,
-                1994
-              </li>
-            </ul>
-          </div>
-          <div class="social-icons-head">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/armanino/"
-                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://web.whatsapp.com/send/?phone=5493875763433"
-                  ><i class="fa fa-whatsapp" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/juanjoarmanino"
-                  ><i class="fa fa-twitter" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/karmanino"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  `,
+	selector: 'app-about',
+	styleUrls: ['styles.css'],
+	styles: [
+		`
+			svg {
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				-ms-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+				-webkit-filter: grayscale(100%);
+			}
+
+			svg:hover {
+				-webkit-filter: grayscale(0%);
+			}
+
+			.row {
+				align-items: stretch;
+			}
+
+      .card {
+        border: 1px solid lightgray; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between
+      }
+
+      .col {
+        display: flex;
+      }
+
+      .album {
+        padding-top: 10px !important;
+      }
+
+      .sec-title {
+        margin-bottom: 10px;
+      }
+
+      .card-body {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+      }
+		`,
+	],
+	template: `
+		<div class="section1 p-30" id="Home">
+			<div class="sec-title">
+				<!-- <div class="pg-sub-title">Home</div> -->
+				<div class="pg-title">Portfolio</div>
+			</div>
+			<div class="col-lg-6 col-md-8 mx-auto text-center">
+				<h1 class="fw-light">My work</h1>
+				<p class="lead text-muted">
+					Feel free to visit both the live website and the source code of each oroject hosted on Github. Some of them
+					are still on development, so don't hesitate to reach me for recommendations! 💪
+				</p>
+			</div>
+			<div class="album py-5 bg-light">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/cryptotracker.png')">
+									<title>Crypto tracker</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Crypto tracker</h5>
+									<p class="card-text">
+										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
+										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/expenses.png')">
+									<title>Expenses App</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Expenses App</h5>
+									<p class="card-text">
+										Basic expenses tracking application with authentication made with Angular 14, NgRx, Firebase and
+										Firestore.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<a href="https://expenses-app-6c86a.web.app/" target="_blank" class="btn btn-outline-danger"
+												>Go</a
+											>
+											<a
+												href="https://github.com/karmanino/expenses-app"
+												target="_blank"
+												class="btn btn-outline-secondary"
+												>Source</a
+											>
+										</div>
+										<i class="fa fa-react" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/ngrx.png');">
+									<title>NgRx Effects App</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">NgRx Effects App</h5>
+									<p class="card-text">Simple application made with Angular 14, NgRx, and REST APIs</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/todoapp.png')">
+									<title>Angular To-Do App</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Angular To-Do Appr</h5>
+									<p class="card-text">Simple To-Do list application made with Angular and NgRx</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/todolist.png')">
+									<title>Angular To-Do App</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Angular To-Do Appr</h5>
+									<p class="card-text">Simple To-Do list application made with Angular and NgRx</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/gifsearchng.png')">
+									<title>Gif Search</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Gif Search w/ Angular</h5>
+									<p class="card-text">Simple application made with Angular to fetch GIFs online by keywords.</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>  
+						</div>
+
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/gifjsx.png')">
+									<title>Crypto tracker</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Crypto tracker</h5>
+									<p class="card-text">
+										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
+										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/imgapp.png')">
+									<title>Crypto tracker</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Crypto tracker</h5>
+									<p class="card-text">
+										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
+										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<button type="button" class="btn btn-outline-danger">Go</button>
+											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	`,
 })
 export class AboutComponent {}

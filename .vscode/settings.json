@@ -18,5 +18,6 @@
         "titleBar.inactiveBackground": "#98f26799",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#98f267"
+    "peacock.color": "#98f267",
+    "prettier.bracketSameLine": true
 }

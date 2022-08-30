@@ -282,7 +282,7 @@ Page Styles
 }
 
 .left-content {
-    width: 250px;
+    width: 20rem;
     overflow-y: auto;
     height: 100%;
     background: #fff;
@@ -293,7 +293,8 @@ Page Styles
 
 .main-content {
     flex: 1;
-    overflow-y: hidden;
+    width: 70rem;
+    overflow-y: auto;
     margin-left: 10px;
     background: #fff;
     border-left: 1px solid rgba(221, 221, 221, 0.38);
