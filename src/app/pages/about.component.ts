@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 	template: `
 	  <div class="section1 p-30" id="Home">
 		<div class="sec-title">
-		  <!-- <div class="pg-sub-title">Home</div> -->
-		  <div class="pg-title">About</div>
+			<div class="pg-title">About</div>
+			<div class="pg-sub-title">Who i am</div>
 		</div>
 		<div class="d-flex-align-center">
 		  <div class="user-img"><img src="assets/main.photo.jpg" /></div>

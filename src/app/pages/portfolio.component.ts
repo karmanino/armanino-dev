@@ -1,59 +1,59 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
+	selector: 'app-portfolio',
 	styleUrls: ['styles.css'],
 	styles: [
 		`
-
-      .card {
-        width: 100%;
+			.card {
+				width: 100%;
 				-webkit-transition: all 0.5s ease;
 				-moz-transition: all 0.5s ease;
 				-o-transition: all 0.5s ease;
 				-ms-transition: all 0.5s ease;
 				transition: all 0.5s ease;
-        svg {
-				-webkit-filter: grayscale(100%);
-        }
-      }
+				svg {
+					transition: all 0.5s ease;
+					-webkit-filter: grayscale(100%);
+				}
+			}
 
-      .card:hover {
-        transition: all 0.5s ease;
-        filter: drop-shadow(0 0 0.75rem grey);
-        svg {
-          -webkit-filter: grayscale(0%);
-        }
-      }
+			.card:hover {
+				transition: all 0.5s ease;
+				filter: drop-shadow(0 0 0.75rem grey);
+				svg {
+					-webkit-filter: grayscale(0%);
+				}
+			}
 
 			.row {
 				align-items: stretch;
 			}
 
-      .card {
-        border: 1px solid lightgray; 
-        display: flex; 
-        flex-direction: column; 
-        justify-content: space-between
-      }
+			.card {
+				border: 1px solid lightgray;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
 
-      .col {
-        display: flex;
-      }
+			.col {
+				display: flex;
+			}
 
-      .album {
-        padding-top: 10px !important;
-      }
+			.album {
+				padding-top: 10px !important;
+			}
 
-      .sec-title {
-        margin-bottom: 10px;
-      }
+			.sec-title {
+				margin-bottom: 10px;
+			}
 
-      .card-body {
-        display: flex; 
-        flex-direction: column; 
-        justify-content: space-between;
-      }
+			.card-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
 		`,
 	],
 	template: `
@@ -65,8 +65,8 @@ import { Component } from '@angular/core';
 			<div class="col-lg-6 col-md-8 mx-auto text-center">
 				<h1 class="fw-light">My work</h1>
 				<p class="lead text-muted">
-					Feel free to visit both the live website and the source code of each oroject hosted on Github. Some of them
-					are still on development, so don't hesitate to reach me for recommendations! 💪
+					Feel free to visit both the live website and the source code of each oroject hosted on Github. Some of them are still on development, so don't
+					hesitate to reach me for recommendations! 💪
 				</p>
 			</div>
 			<div class="album py-5 bg-light">
@@ -91,13 +91,13 @@ import { Component } from '@angular/core';
 								<div class="card-body">
 									<h5 class="card-title">Crypto tracker</h5>
 									<p class="card-text">
-										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
-										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
+										Application that fires push notifications to keep track of P2P current prices of fiat currencies on Binance. Made with Angular 14, MongoDB,
+										Websockets, RxJS 7, Material UI and NodeJS with Express in the back-end.
 									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://crypto-p2p-tracker.herokuapp.com/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/crypto-tracking-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
@@ -122,21 +122,11 @@ import { Component } from '@angular/core';
 
 								<div class="card-body">
 									<h5 class="card-title">Expenses App</h5>
-									<p class="card-text">
-										Basic expenses tracking application with authentication made with Angular 14, NgRx, Firebase and
-										Firestore.
-									</p>
+									<p class="card-text">Basic and friendly application to track your personal expenses. Made with with Angular 14, Redux (NgRx), Firestore and Firebase Authentication.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<a href="https://expenses-app-6c86a.web.app/" target="_blank" class="btn btn-outline-danger"
-												>Go</a
-											>
-											<a
-												href="https://github.com/karmanino/expenses-app"
-												target="_blank"
-												class="btn btn-outline-secondary"
-												>Source</a
-											>
+											<a href="https://expenses-app-6c86a.web.app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+											<a href="https://github.com/karmanino/expenses-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<i class="fa fa-react" aria-hidden="true"></i>
 									</div>
@@ -154,18 +144,49 @@ import { Component } from '@angular/core';
 									aria-label="CryptoTracker"
 									preserveAspectRatio="xMidYMid slice"
 									focusable="false"
-									style="background: no-repeat center/cover url('assets/projects/ngrx.png');">
-									<title>NgRx Effects App</title>
+									style="background: no-repeat center/cover url('assets/projects/todolist.png')">
+									<title>Angular To-Do App</title>
 									<rect width="100%" height="100%" fill="none"></rect>
 								</svg>
 
 								<div class="card-body">
-									<h5 class="card-title">NgRx Effects App</h5>
-									<p class="card-text">Simple application made with Angular 14, NgRx, and REST APIs</p>
+									<h5 class="card-title">Angular To-Do App</h5>
+									<p class="card-text">Simple CRUD To-Do list application made with Angular 14 and Redux (NgRx).</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://karmanino.github.io/angular-to-do-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/angular-to-do-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="CryptoTracker"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/gifjsx.png')">
+									<title>Gif Fetch App</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Gif Fetch App</h5>
+									<p class="card-text">
+										Application made with React 17 and Animate.css 4.1.1 to fetch GIFs online by keywords.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+										<a href="https://karmanino.github.io/react-gif-expert-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/react-gif-expert-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
@@ -189,12 +210,12 @@ import { Component } from '@angular/core';
 								</svg>
 
 								<div class="card-body">
-									<h5 class="card-title">Angular To-Do Appr</h5>
-									<p class="card-text">Simple To-Do list application made with Angular and NgRx</p>
+									<h5 class="card-title">React To-Do App</h5>
+									<p class="card-text">Simple CRUD To-Do list application made with React 17 and Bootstrap 4.5.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://karmanino.github.io/react-to-do-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/react-to-do-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
@@ -212,18 +233,18 @@ import { Component } from '@angular/core';
 									aria-label="CryptoTracker"
 									preserveAspectRatio="xMidYMid slice"
 									focusable="false"
-									style="background: no-repeat center/cover url('assets/projects/todolist.png')">
-									<title>Angular To-Do App</title>
+									style="background: no-repeat center/cover url('assets/projects/ngrx.png');">
+									<title>NgRx Effects App</title>
 									<rect width="100%" height="100%" fill="none"></rect>
 								</svg>
 
 								<div class="card-body">
-									<h5 class="card-title">Angular To-Do Appr</h5>
-									<p class="card-text">Simple To-Do list application made with Angular and NgRx</p>
+									<h5 class="card-title">NgRx Effects App</h5>
+									<p class="card-text">Simple application made with Angular 14, NgRx, and consuming REST API.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://karmanino.github.io/ngrx-effects-app" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/ngrx-effects-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
@@ -247,45 +268,12 @@ import { Component } from '@angular/core';
 								</svg>
 
 								<div class="card-body">
-									<h5 class="card-title">Gif Search w/ Angular</h5>
-									<p class="card-text">Simple application made with Angular to fetch GIFs online by keywords.</p>
+									<h5 class="card-title">Gif Search App</h5>
+									<p class="card-text">Simple application to fetch GIFs online by keywords. Made with Angular 13, Bootstrap 5 and Animate.css 4.1.1.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
-										</div>
-										<!-- <small class="text-muted">9 mins</small> -->
-									</div>
-								</div>
-							</div>  
-						</div>
-
-						<div class="col">
-							<div class="card shadow-sm">
-								<svg
-									class="bd-placeholder-img card-img-top"
-									width="100%"
-									height="225"
-									xmlns="http://www.w3.org/2000/svg"
-									role="img"
-									aria-label="CryptoTracker"
-									preserveAspectRatio="xMidYMid slice"
-									focusable="false"
-									style="background: no-repeat center/cover url('assets/projects/gifjsx.png')">
-									<title>Crypto tracker</title>
-									<rect width="100%" height="100%" fill="none"></rect>
-								</svg>
-
-								<div class="card-body">
-									<h5 class="card-title">Crypto tracker</h5>
-									<p class="card-text">
-										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
-										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://karmanino.github.io/angular-gif-search/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/angular-gif-search" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
@@ -304,20 +292,19 @@ import { Component } from '@angular/core';
 									preserveAspectRatio="xMidYMid slice"
 									focusable="false"
 									style="background: no-repeat center/cover url('assets/projects/imgapp.png')">
-									<title>Crypto tracker</title>
+									<title>Image Search App</title>
 									<rect width="100%" height="100%" fill="none"></rect>
 								</svg>
 
 								<div class="card-body">
-									<h5 class="card-title">Crypto tracker</h5>
+									<h5 class="card-title">Image Search App</h5>
 									<p class="card-text">
-										Application that fires push notifications to keep track of P2P prices of fiat currencies on Binance.
-										Made with Angular 14, MongoDB, Websockets, RxJS, Material UI and NodeJS and Express in the back-end.
+										Simple application made with React to search for images online by keywords.
 									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<button type="button" class="btn btn-outline-danger">Go</button>
-											<button type="button" class="btn btn-outline-secondary" stlye="margin-left: 200px">Source</button>
+										<a href="https://karmanino.github.io/react-gallery-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
+										<a href="https://github.com/karmanino/react-gallery-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>

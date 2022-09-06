@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="section1 p-30" id="Home">
       <div class="sec-title">
-        <!-- <div class="pg-sub-title">Home</div> -->
+        <div class="pg-sub-title">Let's talk about my</div>
         <div class="pg-title">Education</div>
       </div>
       <div class="d-flex-align-center">
