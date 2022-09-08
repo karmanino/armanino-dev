@@ -31,14 +31,14 @@ import { Component } from '@angular/core';
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 								juanjo@armanino.dev
 							</li>
-							<li><i class="fa fa-calendar" aria-hidden="true"></i> 11th March, 1994</li>
+							<li><i class="fa fa-balloon" aria-hidden="true"></i> 11th March, 1994</li>
 						</ul>
 					</div>
 					<div class="social-icons-head">
 						<ul>
 							<li>
 								<a href="https://www.linkedin.com/in/armanino/"
-									><i class="fa fa-linkedin-square" aria-hidden="true"></i
+									><i class="fa fa-linkedin-in" aria-hidden="true"></i
 								></a>
 							</li>
 							<li>

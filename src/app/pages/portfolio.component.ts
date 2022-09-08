@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
 				-o-transition: all 0.5s ease;
 				-ms-transition: all 0.5s ease;
 				transition: all 0.5s ease;
+				overflow: hidden;
 				svg {
 					transition: all 0.5s ease;
 					-webkit-filter: grayscale(100%);
@@ -54,6 +55,14 @@ import { Component } from '@angular/core';
 				flex-direction: column;
 				justify-content: space-between;
 			}
+
+			.framework {
+				position: absolute;
+				bottom: 5%;
+				right: 6%;
+				font-size: 24px;
+				opacity: 0.4;
+			}
 		`,
 	],
 	template: `
@@ -65,7 +74,7 @@ import { Component } from '@angular/core';
 			<div class="col-lg-6 col-md-8 mx-auto text-center">
 				<h1 class="fw-light">My work</h1>
 				<p class="lead text-muted">
-					Feel free to visit both the live website and the source code of each oroject hosted on Github. Some of them are still on development, so don't
+					Feel free to visit both the live website and the source code of each project hosted on Github. All of them are still on development, so don't
 					hesitate to reach me for recommendations! 💪
 				</p>
 			</div>
@@ -96,11 +105,17 @@ import { Component } from '@angular/core';
 									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://crypto-p2p-tracker.herokuapp.com/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/crypto-tracking-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://crypto-p2p-tracker.herokuapp.com/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/crypto-tracking-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-angular"></i>
+									<i class="framework fa-brands fa-mongo"></i>
 								</div>
 							</div>
 						</div>
@@ -122,15 +137,20 @@ import { Component } from '@angular/core';
 
 								<div class="card-body">
 									<h5 class="card-title">Expenses App</h5>
-									<p class="card-text">Basic and friendly application to track your personal expenses. Made with with Angular 14, Redux (NgRx), Firestore and Firebase Authentication.</p>
+									<p class="card-text">
+										Basic and friendly application to track your personal expenses. Made with with Angular 14, Redux (NgRx), Firestore and Firebase
+										Authentication.
+									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
 											<a href="https://expenses-app-6c86a.web.app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-											<a href="https://github.com/karmanino/expenses-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://github.com/karmanino/expenses-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
-										<i class="fa fa-react" aria-hidden="true"></i>
 									</div>
 								</div>
+								<i class="framework fa-brands fa-angular"></i>
 							</div>
 						</div>
 						<div class="col">
@@ -154,11 +174,16 @@ import { Component } from '@angular/core';
 									<p class="card-text">Simple CRUD To-Do list application made with Angular 14 and Redux (NgRx).</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/angular-to-do-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/angular-to-do-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/angular-to-do-app/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/angular-to-do-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-angular"></i>
 								</div>
 							</div>
 						</div>
@@ -180,16 +205,19 @@ import { Component } from '@angular/core';
 
 								<div class="card-body">
 									<h5 class="card-title">Gif Fetch App</h5>
-									<p class="card-text">
-										Application made with React 17 and Animate.css 4.1.1 to fetch GIFs online by keywords.
-									</p>
+									<p class="card-text">Application made with React 17 and Animate.css 4.1.1 to fetch GIFs online by keywords.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/react-gif-expert-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/react-gif-expert-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/react-gif-expert-app/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/react-gif-expert-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-react"></i>
 								</div>
 							</div>
 						</div>
@@ -214,11 +242,16 @@ import { Component } from '@angular/core';
 									<p class="card-text">Simple CRUD To-Do list application made with React 17 and Bootstrap 4.5.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/react-to-do-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/react-to-do-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/react-to-do-app/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/react-to-do-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-react"></i>
 								</div>
 							</div>
 						</div>
@@ -243,11 +276,16 @@ import { Component } from '@angular/core';
 									<p class="card-text">Simple application made with Angular 14, NgRx, and consuming REST API.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/ngrx-effects-app" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/ngrx-effects-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/ngrx-effects-app" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/ngrx-effects-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-angular"></i>
 								</div>
 							</div>
 						</div>
@@ -272,11 +310,16 @@ import { Component } from '@angular/core';
 									<p class="card-text">Simple application to fetch GIFs online by keywords. Made with Angular 13, Bootstrap 5 and Animate.css 4.1.1.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/angular-gif-search/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/angular-gif-search" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/angular-gif-search/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/angular-gif-search" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-angular"></i>
 								</div>
 							</div>
 						</div>
@@ -298,16 +341,19 @@ import { Component } from '@angular/core';
 
 								<div class="card-body">
 									<h5 class="card-title">Image Search App</h5>
-									<p class="card-text">
-										Simple application made with React to search for images online by keywords.
-									</p>
+									<p class="card-text">Simple application made with React to search for images online by keywords.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-										<a href="https://karmanino.github.io/react-gallery-app/" target="_blank" class="btn btn-outline-danger"><i class="fa fa-paper-plane"></i> Go</a>
-										<a href="https://github.com/karmanino/react-gallery-app" target="_blank" class="btn btn-outline-secondary"><i class="fa fa-github"></i> Source</a>
+											<a href="https://karmanino.github.io/react-gallery-app/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/react-gallery-app" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
 										</div>
 										<!-- <small class="text-muted">9 mins</small> -->
 									</div>
+									<i class="framework fa-brands fa-react"></i>
 								</div>
 							</div>
 						</div>
