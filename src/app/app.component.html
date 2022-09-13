@@ -1,6 +1,6 @@
 <div class="wraper">
   <div class="container">
-  <app-sidebar></app-sidebar>
+  <app-sidebar class="sidebar-container"></app-sidebar>
   <div class="main-content" [@routerTransition]="getState(o)">
     <router-outlet #o="outlet"></router-outlet>
   </div>
