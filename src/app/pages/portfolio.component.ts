@@ -81,6 +81,44 @@ import { Component } from '@angular/core';
 			<div class="album py-5 bg-light">
 				<div class="container">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+							<div class="card shadow-sm">
+								<svg
+									class="bd-placeholder-img card-img-top"
+									width="100%"
+									height="225"
+									xmlns="http://www.w3.org/2000/svg"
+									role="img"
+									aria-label="Webchat"
+									preserveAspectRatio="xMidYMid slice"
+									focusable="false"
+									style="background: no-repeat center/cover url('assets/projects/chat.png')">
+									<title>Crypto tracker</title>
+									<rect width="100%" height="100%" fill="none"></rect>
+								</svg>
+
+								<div class="card-body">
+									<h5 class="card-title">Web chat</h5>
+									<p class="card-text">
+										Online web chat with authentication and state management. Made with Angular 14, NodeJS,
+										Socket.IO, Bootstrap 5 and Sass.
+									</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-flex justify-content-between" style="gap: 10px">
+											<a href="https://sockets-webchat.herokuapp.com/" target="_blank" class="btn btn-outline-danger"
+												><i class="fa fa-paper-plane"></i> Go</a
+											>
+											<a href="https://github.com/karmanino/socketio-server" target="_blank" class="btn btn-outline-secondary"
+												><i class="fa-brands fa-github"></i> Source</a
+											>
+										</div>
+										<!-- <small class="text-muted">9 mins</small> -->
+									</div>
+									<i class="framework fa-brands fa-angular"></i>
+									<i class="framework fa-brands fa-mongo"></i>
+								</div>
+							</div>
+						</div>
 						<div class="col">
 							<div class="card shadow-sm">
 								<svg
