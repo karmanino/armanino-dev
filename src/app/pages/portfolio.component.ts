@@ -93,7 +93,7 @@ import { Component } from '@angular/core';
 									preserveAspectRatio="xMidYMid slice"
 									focusable="false"
 									style="background: no-repeat center/cover url('assets/projects/chat.png')">
-									<title>Crypto tracker</title>
+									<title>Webchat with Socket.io</title>
 									<rect width="100%" height="100%" fill="none"></rect>
 								</svg>
 
@@ -101,7 +101,7 @@ import { Component } from '@angular/core';
 									<h5 class="card-title">Web chat</h5>
 									<p class="card-text">
 										Online web chat with authentication and state management. Made with Angular 14, NodeJS,
-										Socket.IO, Bootstrap 5 and Sass.
+										Socket.io, Bootstrap 5 and Sass.
 									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
