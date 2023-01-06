@@ -143,7 +143,7 @@ import { Component } from '@angular/core';
 									</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="d-flex justify-content-between" style="gap: 10px">
-											<a href="https://crypto-p2p-tracker.herokuapp.com/" target="_blank" class="btn btn-outline-danger"
+											<a href="https://crypto-p2p-tracker.onrender.com/" target="_blank" class="btn btn-outline-danger"
 												><i class="fa fa-paper-plane"></i> Go</a
 											>
 											<a href="https://github.com/karmanino/crypto-tracking-app" target="_blank" class="btn btn-outline-secondary"
